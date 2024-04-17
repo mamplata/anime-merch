@@ -9,12 +9,6 @@ h2 {
     font-size: 36px;
 }
 
-body {
-    text-align: justify;
-    text-justify: inter-word;
-    font-size: 12px;
-}
-
 /* Creating grid for the main container */
 .container {
     display: grid;
