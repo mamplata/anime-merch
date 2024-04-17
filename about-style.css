@@ -69,12 +69,12 @@
 
 /* View Port before 640px */
 @media screen and (max-width: 640px) {
-    .section-part {
-        margin-top: 2rem;
-    }
-
     .about-wrapper {
         grid-template-columns: 1fr;
+    }
+
+    .section-part {
+        margin-top: 2rem;
     }
 
     .about-summary-headers {
