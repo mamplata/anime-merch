@@ -1,0 +1,87 @@
+.title-header {
+    font-size: 40px;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.about-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2rem;
+}
+
+.section-part {
+    min-height: 12rem;
+    padding: 20px;
+}
+
+.section-part h2 {
+    margin-bottom: 10px;
+}
+
+.section-part p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.about-summary-headers {
+    border: 2px solid black;
+    max-height: 20rem;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.about-summary-headers h3 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.header-list {
+    margin-top: 1rem;
+    list-style-type: none;
+    padding: 1rem;
+    text-align: left;
+}
+
+.header-list li {
+    margin: 10px;
+}
+
+.header-list li a {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Media Queries */
+
+/* View Port before 1200px */
+@media screen and (max-width: 1200px) {
+    .header-list {
+        margin-top: 2rem;
+        padding: 0;
+    }
+
+    .header-list li a {
+        font-size: 1rem;
+    }
+}
+
+/* View Port before 640px */
+@media screen and (max-width: 640px) {
+    .about-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .section-part {
+        margin-top: 2rem;
+    }
+
+    .about-summary-headers {
+        order: -1;
+    }
+
+    .header-list li a {
+        font-size: 1.2rem;
+    }
+}

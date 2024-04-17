@@ -39,6 +39,7 @@ nav ul li a {
 main {
     flex: 1;
     padding: 20px;
+    height: 100vh;
 }
 
 section {
