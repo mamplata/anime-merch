@@ -5,6 +5,16 @@ h2, p {
     text-align: center;
 }
 
+h2 {
+    font-size: 36px;
+}
+
+body {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 12px;
+}
+
 /* Creating grid for the main container */
 .container {
     display: grid;
@@ -88,6 +98,9 @@ aside a:hover {
     .container-1 {
         grid-template-columns: repeat(2, 1fr); /* Switching to single column layout */
     }
+    footer {
+        margin-top: 20%;
+    }
 }
 
 /* Media query for smaller screens */
@@ -97,6 +110,10 @@ aside a:hover {
     }
     .container-1 {
         grid-template-columns: repeat(2, 1fr); /* Switching to single column layout */
+    }
+
+    footer {
+        margin-top: 30%;
     }
 }
 
@@ -110,7 +127,7 @@ aside a:hover {
         grid-template-columns: 1fr; /* Switching to single column layout */
     }
 
-    aside {
-        grid-column: 1 / span 1; /* Spanning 1 column */
+    footer {
+        margin-top: 50%;
     }
 }
