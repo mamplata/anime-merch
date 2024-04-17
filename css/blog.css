@@ -13,7 +13,7 @@ h2 {
 .container {
     display: grid;
     grid-template-columns: 4fr 1fr; /* Three columns for sections, one column for aside */
-    gap: 5%;
+    gap: 5%; 
     margin-top: 3%;
 }
 
