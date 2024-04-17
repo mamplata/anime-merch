@@ -8,8 +8,8 @@ h2, p {
 /* Creating grid for the main container */
 .container {
     display: grid;
-    grid-template-columns: 3fr 1fr; /* Three columns for sections, one column for aside */
-    gap: 10px;
+    grid-template-columns: 4fr 1fr; /* Three columns for sections, one column for aside */
+    gap: 5%;
     margin-top: 3%;
 }
 
@@ -17,7 +17,7 @@ h2, p {
 .container-1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Three columns for sections */
-    gap: 20px;
+    gap: 5%;
 }
 
 /* Styling individual sections */
@@ -84,7 +84,24 @@ aside a:hover {
 
 
 /* Media query for smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
+    .container-1 {
+        grid-template-columns: repeat(2, 1fr); /* Switching to single column layout */
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 800px) {
+    .container {
+        grid-template-columns: 1fr; /* Switching to single column layout */
+    }
+    .container-1 {
+        grid-template-columns: repeat(2, 1fr); /* Switching to single column layout */
+    }
+}
+
+
+@media screen and (max-width: 568px) {
     .container {
         grid-template-columns: 1fr; /* Switching to single column layout */
     }
