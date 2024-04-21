@@ -73,6 +73,10 @@
 
 /* View Port before 640px */
 @media screen and (max-width: 640px) {
+    .about-summary-headers {
+        position: static;
+    }
+
     .about-wrapper {
         grid-template-columns: 1fr;
     }
