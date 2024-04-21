@@ -1,0 +1,148 @@
+/* Background styling and darkening */
+.background {
+    background: url(../contactImg/background-for-contact.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.dark-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: -1;
+}
+
+/* Styling for text */
+ul {
+    list-style-type: none;
+}
+ul li p {
+    color: rgb(224, 217, 217);
+}
+ul li h3 {
+    color: rgb(0, 0, 0);
+}
+#center-text {
+    text-align: center;
+    padding: 0 10%;
+    color: rgb(224, 217, 217);
+}
+#center-text h2 {
+    color: aliceblue;
+}
+
+/* Setting main element to display as a grid */
+main {
+    display: grid;
+}
+
+/* Sidebar style */
+.sidebar {
+    display: grid;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar ul li.address {
+    background-image: url('/icons/address.png');
+    background-size: 9%;
+}
+.sidebar ul li.phone {
+    background-image: url('/icons/phone\ number.png');
+    background-size: 9%;
+}
+.sidebar ul li.email {
+    background-image: url('/icons/email.png');
+    background-size: 9%;
+}
+.sidebar ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding-left: 60px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+/* input-fields style */
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ff6b81;
+    height: 100%;
+    width: 60%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.input-fields h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.input-fields input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+}
+.input-fields #submit {
+    width: 50px;
+    text-align: center;
+}
+.macro-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.input-fields .name-fields {
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-fields .name-fields input[type="text"] {
+    width: 30%;
+    margin-right: 10px;
+}
+.input-fields input[type="email"] {
+    width: 50%;
+}
+
+/* Media Queries */
+@media screen and (min-width: 800px) {
+    .macro-layout {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+@media screen and (max-width: 600px) {
+    .input-fields .name-fields input[type="text"] {
+        width: auto;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 1224px) {
+    .input-fields .name-fields {
+        flex-direction: column;
+    }
+    .input-fields .name-fields label, .input-fields .name-fields input[type="text"] {
+        width: 50%;
+        flex: 1;
+    }
+    .input-fields .name-fields input[type="text"] {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .input-fields input[type="email"] {
+        width: 50%;
+    }
+}

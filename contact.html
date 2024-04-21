@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Anime Merch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
+    <div class="background"></div>
+    <div class="dark-overlay"></div>
     <header>
         <h1>Anime Merch</h1>
         <nav>
@@ -20,11 +23,43 @@
         </nav>
     </header>
 
-    <main>
+    <!-- Header -->
+    <div id="center-text">
         <h2>Contact Us</h2>
-        <p>Get in touch with us through the following contact information...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci facilis eius dolorum quidem consequatur voluptatum tempora, fugit minima exercitationem possimus libero veritatis beatae quisquam repellendus assumenda quaerat modi vero quis.</p><br><br>
+    </div>
+
+    <!-- main content -->
+    <main>
+        <div class="macro-layout">
+            <!-- sidebar -->
+            <div class="sidebar">
+                <ul>
+                    <li class="address"><h3>Address</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></li>
+                    <li class="phone"><h3>Phone</h3><p>09123456789</p></li>
+                    <li class="email"><h3>Email</h3><p>JohnDoe123@gmail.com</p></li>
+                </ul>
+            </div>
+
+            <!-- input-fields -->
+            <div class="input-fields">
+                <h3>Send Message</h3>
+                <div class="name-fields">
+                    <label for="First_Name">First Name:</label>
+                    <input type="text" id="firstName" placeholder="Ex. John Doe">
+                    <label for="Last_Name">Last Name:</label>
+                    <input type="text" id="lastName" placeholder="Ex. Doe">
+                </div>
+                <br>
+                Email: <input type="email" placeholder="Ex. JohnDoe12@gmail.com"><br>
+                <label for="txtArea">Your message: </label>
+                <textarea rows="15"></textarea>
+                <input type="submit" value="Submit">
+            </div>
+        </div>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Anime Merch. All rights reserved.</p>
     </footer>
