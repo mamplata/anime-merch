@@ -11,11 +11,17 @@ body {
     min-height: 100vh;
 }
 
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 header {
-    background-color: #333;
+    background-color: #37577c;
     color: #fff;
     padding: 20px;
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .title{
@@ -42,10 +48,12 @@ header h1 {
 
 /* Styling individual sections */
 section {
-    background-color: #f2f2f2;
+    color:#fff;
     padding: 20px;
     border-radius: 8px;
     text-align: center; /* Center aligning text */
+    background-color: #516c8b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Styling images in sections */
@@ -71,6 +79,13 @@ nav ul li a {
     text-decoration: none;
 }
 
+.bottom-nav {
+    background-color: #37577c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
 main {
     flex: 1;
     padding: 20px;
@@ -81,11 +96,35 @@ section {
     margin-bottom: 40px;
 }
 
-footer {
+button.shop-btn {
     background-color: #333;
     color: #fff;
+    padding: 10px 20px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+button.shop-btn:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #ffffcc;
+    color: #000000;
     text-align: center;
     padding: 10px 0;
+}
+
+@media (min-width: 45em) {
+    .welcome {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        font-family: 'Courier New', Courier, monospace;
+    }
 }
 
 /* Media query for smaller screens */

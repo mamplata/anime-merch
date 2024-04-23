@@ -26,7 +26,8 @@ h2 {
 
 /* Styling individual sections */
 section {
-    background-color: #f2f2f2;
+    background-color: #c7c9e4;
+    color: #000000;
     padding: 20px;
     border-radius: 8px;
     text-align: center; /* Center aligning text */
@@ -57,7 +58,7 @@ section a:hover {
 
 /* Styling the aside */
 aside {
-    background-color: #f2f2f2;
+    background-color: #c7c9e4;
     padding: 20px;
     border-radius: 8px;
 }
