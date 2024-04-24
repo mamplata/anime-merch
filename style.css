@@ -7,7 +7,7 @@
 
 /* Background styling and darkening */
 .background {
-    background: url(../contactImg/background-for-contact.jpg);
+    background: url(contactImg/background-for-contact.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
