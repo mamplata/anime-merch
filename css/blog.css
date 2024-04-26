@@ -87,6 +87,13 @@ aside a:hover {
     text-decoration: underline; /* Underline on hover */
 }
 
+/* Media query for smaller screens */
+@media screen and (min-width: 1500px) {
+    section img {
+        width: 50%;
+        height: 50%;
+    }
+}
 
 /* Media query for smaller screens */
 @media screen and (max-width: 1000px) {

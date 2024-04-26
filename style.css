@@ -98,6 +98,7 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 20px;
+    transition: ease-in-out 0.2s;
 }
 
 nav ul li a {
@@ -105,12 +106,32 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover  {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 8px 5px;
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+}
+
+nav ul li a:active{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 8px 5px;
+    border-radius: 5px;
+}
+
 .bottom-nav {
-    background-color: #37577c;
+    background-color: #1d344e;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
+
+.bottom-nav ul {
+    margin-bottom: 10px;
+}
+
 
 main {
     flex: 1;
@@ -137,14 +158,20 @@ button.shop-btn:hover {
     background-color: #555;
 }
 
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
 footer {
     color: #000000;
     text-align: center;
-}
-
-footer p {
-    background-color: #ffffcc;
-    padding: 10px 0;
 }
 
 .welcome {
@@ -160,6 +187,13 @@ footer p {
         flex-direction: column;
         text-align: justify;
         font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    section img {
+        width: 50%;
+        height: 50%;
     }
 }
 
@@ -199,5 +233,11 @@ footer p {
 
     footer {
         margin-top: 50%;
+    }
+
+    nav ul li {
+        display: flex;
+        justify-content: center;
+        margin: 5px 0;
     }
 }
