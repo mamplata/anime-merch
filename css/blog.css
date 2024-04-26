@@ -87,6 +87,11 @@ aside a:hover {
     text-decoration: underline; /* Underline on hover */
 }
 
+.title{
+    color: aliceblue;
+    text-align: center;
+}
+
 /* Media query for smaller screens */
 @media screen and (min-width: 1500px) {
     section img {
